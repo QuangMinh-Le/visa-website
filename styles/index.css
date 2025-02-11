@@ -1,0 +1,14 @@
+body { background-color: #f9eddc; }
+.header, .footer { background-color: #aa0707; color: white; }
+.header .container { max-width: 1200px; }
+.footer { padding: 20px 0; }
+.image-slider { background: #d3d3d3; height: 300px; display: flex; align-items: center; justify-content: center; }
+.info-section { background: #f0bf83; padding: 20px; margin: 10px 0; }
+.logo-container { max-width: 100px; }
+.logo-container img { width: 100%; height: auto; }
+.nav-links { display: flex; gap: 10px; }
+.navbar-toggler { display: none; }
+@media (max-width: 768px) {
+    .nav-links { display: none; }
+    .navbar-toggler { display: block; }
+}
