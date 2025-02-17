@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Merch</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/homepage.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header py-1">
+        <nav class="navbar navbar-expand-lg custom-navbar">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="public/Logo-new-white.png" alt="Logo" class="img-fluid">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto align-items-center">
+                     <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="activities.html">Activities</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="merch.html">Buy Merch</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="register.html" class="btn btn-dark btn-sm me-2">Become a Member</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="donate.html" class="btn btn-outline-light btn-sm">Donate</a>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- Merch Section -->
+    <main class="container py-5">
+        <h2 class="text-center mb-4">Our Merchandise</h2>
+        <div class="row g-4">
+            <!-- Merch Items -->
+            <script>
+                const merchItems = [
+                    { img: 'public/merchs/merch1.webp', desc: 'T-Shirt - Classic Logo', price: '$25' },
+                    { img: 'public/merchs/merch2.webp', desc: 'Hoodie - Warm & Stylish', price: '$45' },
+                    { img: 'public/merchs/merch3.webp', desc: "Mug - Coffee Lover's Choice", price: '$15' },
+                    { img: 'public/merchs/merch4.webp', desc: 'Cap - Summer Essential', price: '$20' },
+                    { img: 'public/merchs/merch5.jpg', desc: 'Sticker Pack - Fun Designs', price: '$10' },
+                    { img: 'public/merchs/merch6.jpg', desc: 'Notebook - Minimalist Design', price: '$18' },
+                    { img: 'public/merchs/merch7.webp', desc: 'Phone Case - Sleek & Protective', price: '$22' },
+                    { img: 'public/merchs/merch8.webp', desc: 'Keychain - Small & Useful', price: '$8' },
+                    { img: 'public/merchs/merch9.webp', desc: 'Poster - High-Quality Print', price: '$12' },
+                    { img: 'public/merchs/merch10.webp', desc: 'Socks - Cozy & Comfy', price: '$14' }
+                ];
+                document.write(merchItems.map(item => `
+                    <div class="col-md-4 col-lg-2">
+                        <div class="card shadow-sm text-center p-3">
+                            <img src="${item.img}" class="card-img-top" alt="${item.desc}">
+                            <div class="card-body">
+                                <p class="card-text">${item.desc}</p>
+                                <h5 class="text-primary">${item.price}</h5>
+                            </div>
+                        </div>
+                    </div>
+                `).join(''));
+            </script>
+        </div>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer text-white py-4">
+        <div class="container footer-container">
+            <div class="footer-section">
+                <a class="navbar-brand" href="#">
+                    <img src="public/Logo-new-white.png" alt="Logo" class="img-fluid">
+                </a>
+                <p>We are Vietnamese International Student Association, dedicated to making a positive impact.</p>
+            </div>
+            <div class="footer-section">
+                <h5>Quick Links</h5>
+                <a href="#" class="text-white d-block">About us</a>
+                <a href="#" class="text-white d-block">Activities</a>
+                <a href="#" class="text-white d-block">Buy Merch</a>
+                <a href="#" class="text-white d-block">Become a member</a>
+                <a href="#" class="text-white d-block">Donate</a>
+            </div>
+            <div class="footer-section">
+                <h5>Contact us</h5>
+                <p>Email: abc@gmail.com</p>
+                <p>Phone: 343-2977895</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

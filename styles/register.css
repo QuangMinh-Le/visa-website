@@ -1,0 +1,178 @@
+body {
+   background-color: #f9eddc;
+   font-family: Arial, sans-serif;
+ }
+ 
+ /* Header Styling */
+ .header {
+   background-color: #aa0707;
+   color: white;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+ }
+
+ /* Header Styling */
+.header {
+   background-color: #aa0707;
+   color: white;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+ }
+ 
+ .custom-navbar .container {
+   max-width: 70%;
+ }
+ 
+ /* Logo */
+ .navbar-brand img {
+   max-width: 100px;
+ }
+ 
+ /* Navbar Links */
+ .custom-navbar .nav-link {
+   color: white !important;
+   font-weight: 400;
+   padding: 0px 20px; /* Increased gap between nav links */
+   transition: color 0.3s ease-in-out;
+ }
+ 
+ .custom-navbar .nav-link:hover {
+   text-decoration: underline;
+   color: #f0bf83 !important;
+ }
+ 
+ /* Buttons */
+ .navbar-nav .nav-item {
+   display: flex;
+   align-items: center;
+   justify-content: center; /* Center align buttons */
+   margin-right: 15px;
+ }
+ 
+ .btn-dark {
+   background-color: #222;
+   padding: 6px;
+   border: none;
+ }
+ 
+ .btn-dark:hover {
+   background-color: #f0bf83;
+   color: black;
+ }
+ 
+ .btn-outline-light {
+   border: 2px solid white;
+   color: white;
+ }
+ 
+ .btn-outline-light:hover {
+   background-color: white;
+   color: #aa0707;
+ }
+ 
+ /* Navbar Toggle */
+ .navbar-toggler {
+   border: none;
+ }
+ 
+ .navbar-toggler-icon {
+   filter: invert(100%);
+ }
+ 
+ /* Responsive Design */
+ @media (max-width: 992px) {
+   .custom-navbar .navbar-collapse {
+     background-color: #aa0707;
+     padding: 10px;
+   }
+   .custom-navbar .nav-link {
+     text-align: center;
+     display: block;
+   }
+   .custom-navbar .nav-item {
+     margin-bottom: 10px;
+   }
+   .btn {
+     width: 100%;
+     text-align: center;
+   }
+ }
+ 
+ /* Full-width Image */
+ .banner {
+   width: 100%;
+   height: 300px;
+   object-fit: cover;
+ }
+ 
+ /* Form Container */
+ .form-container {
+   width: 50%;
+   margin: 40px auto;
+   background: white;
+   padding: 30px;
+   border-radius: 10px;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+ }
+ 
+ .form-container h2 {
+   text-align: center;
+   margin-bottom: 20px;
+ }
+ 
+ .form-group {
+   margin-bottom: 15px;
+ }
+ 
+ .form-group label {
+   font-weight: bold;
+   display: block;
+   margin-bottom: 5px;
+ }
+ 
+ .form-group input,
+ .form-group select,
+ .form-group textarea {
+   width: 100%;
+   padding: 10px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+ }
+ 
+ .checkbox-group label {
+   display: inline-block;
+   margin-right: 15px;
+ }
+ 
+ .submit-btn {
+   width: 100%;
+   background-color: #aa0707;
+   color: white;
+   padding: 10px;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   font-size: 16px;
+ }
+ 
+ .submit-btn:hover {
+   background-color: #880505;
+ }
+ 
+
+/* Footer */
+.footer {
+   padding: 20px 0;
+   background-color: #aa0707;
+   color: white;
+ }
+ 
+ .footer-container {
+   display: flex;
+   flex-wrap: wrap; /* Allows items to wrap down if needed */
+   justify-content: space-between;
+   gap: 50px; /* Adds spacing between sections */
+ }
+ 
+ .footer-section {
+   flex: 1 1 30%; /* Each section takes up to 30% width but can shrink */
+   min-width: 250px; /* Ensures it doesn’t get too small */
+ }

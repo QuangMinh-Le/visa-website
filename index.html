@@ -5,58 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Organization Homepage</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/homepage.css">
+    <script defer src="./scripts/animations.js"></script>
 </head>
 <body>
     <!-- Header -->
-    <header class="header py-3">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <header class="header py-1">
+        <nav class="navbar navbar-expand-lg custom-navbar">
             <div class="container">
                 <!-- Logo -->
-                <a class="navbar-brand" href="#">
-                    <img src="public/Logo-new-white.png" alt="Logo" class="img-fluid" style="max-height: 50px;">
+                <a class="navbar-brand" href="index.html">
+                    <img src="public/Logo-new-white.png" alt="Logo" class="img-fluid">
                 </a>
         
                 <!-- Navbar Toggle Button -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
         
                 <!-- Navbar Links -->
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto">
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto align-items-center">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" href="#">About us</a>
+                            <a class="nav-link" href="about.html">About Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" href="#">Activities</a>
+                            <a class="nav-link" href="activities.html">Activities</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" href="#">Buy Merch</a>
+                            <a class="nav-link" href="merch.html">Buy Merch</a>
                         </li>
                         <li class="nav-item">
-                            <button class="btn btn-dark btn-sm me-2">Become a member</button>
+                            <a href="register.html" class="btn btn-dark btn-sm me-2">Become a Member</a>
                         </li>
                         <li class="nav-item">
-                            <button class="btn btn-secondary btn-sm">Donate</button>
+                            <a href="donate.html" class="btn btn-outline-light btn-sm">Donate</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
-        
     </header>
     
-
-
-
     <!-- Body -->
-    <main class="container mt-4">
-        <!-- Image Slider -->
+    <main>
+        <!-- Full-Screen Image Slider -->
         <div id="carouselExample" class="carousel slide image-slider" data-bs-ride="carousel">
-
-              <div class="carousel-inner">
+            <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="public/img-slider-1.png" class="d-block w-100" alt="Slide 1">
                 </div>
@@ -69,7 +65,7 @@
                 <div class="carousel-item">
                     <img src="public/img-slider-4.jpg" class="d-block w-100" alt="Slide 4">
                 </div>
-              </div>
+            </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             </button>
@@ -78,21 +74,42 @@
             </button>
         </div>
         
-        
-        <!-- Info Sections -->
-        <div class="info-section">Info 1</div>
-        <div class="info-section">Info 1</div>
-        <div class="info-section">Info 1</div>
+        <!-- Information Sections -->
+        <section class="info-container">
+            <div class="info-section fade-in left">
+                <img src="public/info-1.svg" alt="Info 1">
+                <div class="text">
+                    <h3>About Our Organization</h3>
+                    <p>We are dedicated to making a friendly, welcoming environment for all the International Vietnamese Student in Ottawa.</p>
+                </div>
+            </div>
+            <div class="info-section fade-in right">
+                <div class="text">
+                    <h3>Our Activities</h3>
+                    <p>Explore the different programs and events that we organize throughout the year.</p>
+                </div>
+                <img src="public/info-2.svg" alt="Info 2">
+            </div>
+            <div class="info-section fade-in left">
+                <img src="public/info-3.svg" alt="Info 3">
+                <div class="text">
+                    <h3>Join Us</h3>
+                    <p>Become a member and contribute to our cause in meaningful ways.</p>
+                </div>
+            </div>
+        </section>
     </main>
     
     <!-- Footer -->
     <footer class="footer text-white">
-        <div class="container d-flex justify-content-between">
-            <div>
-                <h5>Logo</h5>
-                <p>Some placeholder text about the organization.</p>
+        <div class="container footer-container">
+            <div class="footer-section">
+                <a class="navbar-brand" href="#">
+                    <img src="public/Logo-new-white.png" alt="Logo" class="img-fluid">
+                </a>
+                <p>We are Vietnamese International Student Association, we dedicated to making a positive impact through our various initiatives.</p>
             </div>
-            <div>
+            <div class="footer-section">
                 <h5>Quick Links</h5>
                 <a href="#" class="text-white d-block">About us</a>
                 <a href="#" class="text-white d-block">Activities</a>
@@ -100,13 +117,14 @@
                 <a href="#" class="text-white d-block">Become a member</a>
                 <a href="#" class="text-white d-block">Donate</a>
             </div>
-            <div>
+            <div class="footer-section">
                 <h5>Contact us</h5>
                 <p>Email: abc@gmail.com</p>
                 <p>Phone: 343-2977895</p>
             </div>
         </div>
     </footer>
+    
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>

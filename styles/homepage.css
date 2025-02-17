@@ -1,0 +1,164 @@
+body {
+  background-color: #f9eddc;
+}
+
+/* Header Styling */
+.header {
+  background-color: #aa0707;
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.custom-navbar .container {
+  max-width: 70%;
+}
+
+/* Logo */
+.navbar-brand img {
+  max-width: 100px;
+}
+
+/* Navbar Links */
+.custom-navbar .nav-link {
+  color: white !important;
+  font-weight: 400;
+  padding: 0px 20px; /* Increased gap between nav links */
+  transition: color 0.3s ease-in-out;
+}
+
+.custom-navbar .nav-link:hover {
+  text-decoration: underline;
+  color: #f0bf83 !important;
+}
+
+/* Buttons */
+.navbar-nav .nav-item {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center align buttons */
+  margin-right: 15px;
+}
+
+.btn-dark {
+  background-color: #222;
+  padding: 6px;
+  border: none;
+}
+
+.btn-dark:hover {
+  background-color: #f0bf83;
+  color: black;
+}
+
+.btn-outline-light {
+  border: 2px solid white;
+  color: white;
+}
+
+.btn-outline-light:hover {
+  background-color: white;
+  color: #aa0707;
+}
+
+/* Navbar Toggle */
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler-icon {
+  filter: invert(100%);
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .custom-navbar .navbar-collapse {
+    background-color: #aa0707;
+    padding: 10px;
+  }
+  .custom-navbar .nav-link {
+    text-align: center;
+    display: block;
+  }
+  .custom-navbar .nav-item {
+    margin-bottom: 10px;
+  }
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Image Slider - Fullscreen */
+
+.image-slider {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+/* Info Sections */
+.info-container { 
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Center align buttons */
+}
+
+.info-section {
+  width: 70%;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  margin: 30px 0;
+  display: flex;
+  align-items: center;
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: all 0.6s ease-in-out;
+}
+
+.info-section.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+
+.info-section:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.info-section img {
+  max-width: 40%;
+  border-radius: 10px;
+  margin: 0 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px 0;
+  background-color: #aa0707;
+  color: white;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap; /* Allows items to wrap down if needed */
+  justify-content: space-between;
+  gap: 50px; /* Adds spacing between sections */
+}
+
+.footer-section {
+  flex: 1 1 30%; /* Each section takes up to 30% width but can shrink */
+  min-width: 250px; /* Ensures it doesn’t get too small */
+}
