@@ -1,0 +1,169 @@
+body {
+   background-color: #f9eddc;
+   font-family: Arial, sans-serif;
+ }
+ 
+ /* Header Styling */
+ .header {
+   background-color: #aa0707;
+   color: white;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+ }
+ 
+ /* Header Styling */
+ .header {
+   background-color: #aa0707;
+   color: white;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+ }
+ 
+ .custom-navbar .container {
+   max-width: 70%;
+ }
+ 
+ /* Logo */
+ .navbar-brand img {
+   max-width: 100px;
+ }
+ 
+ /* Navbar Links */
+ .custom-navbar .nav-link {
+   color: white !important;
+   font-weight: 400;
+   padding: 0px 20px; /* Increased gap between nav links */
+   transition: color 0.3s ease-in-out;
+ }
+ 
+ .custom-navbar .nav-link:hover {
+   text-decoration: underline;
+   color: #f0bf83 !important;
+ }
+ 
+ /* Buttons */
+ .navbar-nav .nav-item {
+   display: flex;
+   align-items: center;
+   justify-content: center; /* Center align buttons */
+   margin-right: 15px;
+ }
+ 
+ .btn-dark {
+   background-color: #222;
+   padding: 6px;
+   border: none;
+ }
+ 
+ .btn-dark:hover {
+   background-color: #f0bf83;
+   color: black;
+ }
+ 
+ .btn-outline-light {
+   border: 2px solid white;
+   color: white;
+ }
+ 
+ .btn-outline-light:hover {
+   background-color: white;
+   color: #aa0707;
+ }
+ 
+ /* Navbar Toggle */
+ .navbar-toggler {
+   border: none;
+ }
+ 
+ .navbar-toggler-icon {
+   filter: invert(100%);
+ }
+ 
+ /* Responsive Design */
+ @media (max-width: 992px) {
+   .custom-navbar .navbar-collapse {
+     background-color: #aa0707;
+     padding: 10px;
+   }
+   .custom-navbar .nav-link {
+     text-align: center;
+     display: block;
+   }
+   .custom-navbar .nav-item {
+     margin-bottom: 10px;
+   }
+   .btn {
+     width: 100%;
+     text-align: center;
+   }
+ }
+ 
+ /* About */
+
+ /* Banner Image */
+.banner {
+   width: 100%;
+   height: 300px;
+   background: url('../public/about-banner.jpg') no-repeat center center;
+   background-size: cover;
+ }
+ 
+ /* Main Content */
+ .about-container {
+   max-width: 70%;
+   margin: 50px auto;
+   padding: 20px;
+   background: white;
+   border-radius: 20px;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+   text-align: center;
+ }
+ 
+ .about-container h1 {
+   color: #aa0707;
+   font-size: 2em;
+   margin-bottom: 20px;
+ }
+ 
+ .about-container p {
+   font-size: 1.1em;
+   line-height: 1.6;
+   color: #333;
+   text-align: justify;
+ }
+ 
+ /* Responsive Design */
+ @media (max-width: 992px) {
+   .about-container {
+     max-width: 90%;
+   }
+   .about-container h1 {
+     font-size: 1.8em;
+   }
+   .about-container p {
+     font-size: 1em;
+   }
+ }
+ 
+
+ 
+ 
+
+ /* Footer */
+ .footer {
+   padding: 20px 0;
+   background-color: #aa0707;
+   color: white;
+   text-align: center;
+ }
+ 
+ .footer-container {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   gap: 50px;
+ }
+ 
+ .footer-section {
+   flex: 1 1 30%;
+   min-width: 250px;
+ }
+ 
